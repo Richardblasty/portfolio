@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Richard Marques | Desenvolvedor Back-end</title>
+<meta name="description" content="Portfólio de Richard de Assis Marques, desenvolvedor back-end em Fortaleza/CE. Python, FastAPI, Node.js, NestJS, PostgreSQL e automação de processos.">
+<meta property="og:title" content="Richard Marques | Desenvolvedor Back-end">
+<meta property="og:description" content="Sistemas, automações e integrações com Python, Node.js e SQL.">
+<!-- TROCAR: criar assets/img/og-image.png (1200×630) -->
+<meta property="og:image" content="assets/img/og-image.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Great+Vibes&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-gh" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0119 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A17 17 0 013 5a2 2 0 012-2z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></g></symbol>
+</svg>
+
+<header id="topo">
+  <nav class="wrap nav" aria-label="Principal">
+    <a href="#inicio" class="logo"><span class="logo-mark">RM</span>RICHARD<b>MARQUES</b></a>
+    <ul class="menu" id="menu">
+      <li><a href="#inicio" class="active">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="#contato" class="btn btn-ghost nav-cta">Vamos conversar</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <!-- TROCAR (opcional): saudação -->
+      <span class="eyebrow">Olá, eu sou</span>
+      <h1>Richard <span>de Assis Marques</span></h1>
+      <p class="role"><span id="role-text">Desenvolvedor Back-end</span><span class="caret" aria-hidden="true"></span></p>
+      <!-- TROCAR (opcional): frase de apresentação -->
+      <p class="lead">Construo APIs, automações e sistemas web com Python, Node.js e bancos SQL. Gosto de transformar processos manuais e repetitivos em software que roda sozinho, do PDF que vira planilha à loja virtual com painel próprio.</p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn btn-primary">Contrate-me <svg><use href="#i-arrow"/></svg></a>
+        <a href="#projetos" class="btn btn-ghost">Ver meus projetos <svg><use href="#i-grid"/></svg></a>
+      </div>
+      <p class="status"><i></i>Disponível para projetos freelance</p>
+      <div class="socials" aria-label="Redes sociais">
+        <a href="https://github.com/Richardblasty" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-gh"/></svg></a>
+        <a href="https://www.linkedin.com/in/richard-de-assis-marques-04745a335" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-in"/></svg></a>
+        <a href="https://www.instagram.com/richardmarquesdev" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+        <a href="mailto:richardmarques923@gmail.com" aria-label="E-mail"><svg><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="ring"></div><div class="ring r2"></div>
+      <picture>
+        <source srcset="assets/img/foto-richard.webp" type="image/webp">
+        <img class="photo-img" src="assets/img/foto-richard.jpg" alt="Foto de Richard de Assis Marques" width="800" height="800">
+      </picture>
+      <div class="chip c1"><b>Py</b>Python</div>
+      <div class="chip c2"><b>Fa</b>FastAPI</div>
+      <div class="chip c3"><b>Pg</b>PostgreSQL</div>
+      <div class="chip c4"><b>TS</b>NestJS</div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap band about-grid">
+    <div>
+      <span class="eyebrow">Sobre mim</span>
+      <h2 class="h2">Do conserto de computadores ao código que roda em produção</h2>
+      <p class="lead">Sou técnico em Desenvolvimento de Sistemas pela EEEP Comendador Miguel Gurgel, em Fortaleza. Comecei fazendo manutenção de computadores no meu bairro e estudando programação no tempo livre. Com o tempo vieram as automações, os primeiros clientes e os sistemas que hoje estão no ar.</p>
+      <p class="lead" style="margin-top:12px">Meu foco é o back-end: regras de negócio, integrações, bancos de dados e automação de processos. Já liderei equipe em projeto escolar, trabalho em monorepos TypeScript com outros devs e mantenho um aplicativo desktop com licença por assinatura.</p>
+      <div class="stats">
+        <div class="stat"><strong>10+</strong><span>Projetos desenvolvidos</span></div>
+        <div class="stat"><strong>3</strong><span>Sistemas em produção</span></div>
+        <div class="stat"><strong>1</strong><span>App com assinatura mensal</span></div>
+        <div class="stat"><strong>3</strong><span>Linguagens no dia a dia</span></div>
+      </div>
+      <!-- TROCAR: colocar o arquivo assets/curriculo-richard-marques.pdf -->
+      <a href="assets/curriculo-richard-marques.pdf" download class="btn btn-ghost" id="cv-btn"><svg><use href="#i-dl"/></svg><span>Baixar currículo</span></a>
+    </div>
+    <div>
+      <div class="info">
+        <div class="info-row"><svg><use href="#i-user"/></svg><span>Nome</span><strong>Richard de Assis Marques</strong></div>
+        <div class="info-row"><svg><use href="#i-mail"/></svg><span>E-mail</span><strong>richardmarques923@gmail.com</strong></div>
+        <div class="info-row"><svg><use href="#i-pin"/></svg><span>Localização</span><strong>Brasil, Ceará, Fortaleza, Messejana</strong></div>
+        <!-- TROCAR: confirmar o número (celular costuma ter 9 dígitos: 9 8462-8735) -->
+        <div class="info-row"><svg><use href="#i-phone"/></svg><span>Telefone</span><strong>+55 85 8462-8735</strong></div>
+        <div class="info-row"><svg><use href="#i-clock"/></svg><span>Status</span><strong>Disponível para freelance</strong></div>
+      </div>
+      <p class="sign" aria-hidden="true">Richard Marques</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap band">
+    <div class="center"><span class="eyebrow">O que eu faço</span><h2 class="h2">Meus serviços</h2></div>
+    <div class="services">
+      <article class="svc">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01" stroke-linecap="round" stroke-width="2.6"/></g></svg></div>
+        <h3>Desenvolvimento Back-end</h3>
+        <p>APIs e aplicações web com regras de negócio bem organizadas, autenticação, testes e deploy.</p>
+        <ul><li>Python</li><li>FastAPI</li><li>Node.js</li><li>NestJS</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0113.7-5.7L20 8.5M20 4v4.5h-4.5M20 12a8 8 0 01-13.7 5.7L4 15.5M4 20v-4.5h4.5"/></g></svg></div>
+        <h3>Automação de Processos</h3>
+        <p>Robôs que leem PDFs, tratam dados e alimentam planilhas sem trabalho manual.</p>
+        <ul><li>Python</li><li>Pandas</li><li>Google Sheets</li><li>PDF</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></g></svg></div>
+        <h3>Banco de Dados</h3>
+        <p>Modelagem, migrations, consultas e integração de bancos relacionais com a aplicação.</p>
+        <ul><li>PostgreSQL</li><li>SQLite</li><li>Prisma</li><li>Drizzle</li></ul>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 14l-2 1.5L9 17M15 14l2 1.5-2 1.5"/></g></svg></div>
+        <h3>Sites e Sistemas Web</h3>
+        <p>Sites e lojas responsivos, publicados e prontos para uso, com painel para o cliente.</p>
+        <ul><li>Next.js</li><li>React</li><li>Docker</li><li>Render</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="habilidades">
+  <div class="wrap band skills-grid">
+    <div>
+      <span class="eyebrow">Minha experiência</span>
+      <h2 class="h2">Habilidades e tecnologias</h2>
+      <!-- TROCAR (opcional): ajustar os percentuais de cada barra -->
+      <div class="bars">
+        <div><div class="bar-top"><span>Python (FastAPI, Flask, Pandas)</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div></div>
+        <div><div class="bar-top"><span>Node.js / TypeScript (NestJS, Express)</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div></div>
+        <div><div class="bar-top"><span>SQL (PostgreSQL, SQLite)</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div></div>
+        <div><div class="bar-top"><span>ORMs (Prisma, Drizzle)</span><span>70%</span></div><div class="bar"><i style="width:70%"></i></div></div>
+        <div><div class="bar-top"><span>React / Next.js</span><span>70%</span></div><div class="bar"><i style="width:70%"></i></div></div>
+        <div><div class="bar-top"><span>Git / Deploy (Docker, GitHub Actions, Render)</span><span>75%</span></div><div class="bar"><i style="width:75%"></i></div></div>
+      </div>
+    </div>
+    <div>
+      <p class="tech-label">Linguagens e back-end</p>
+      <div class="tech">
+        <div class="tile"><i class="devicon-python-plain colored" aria-hidden="true"></i><span>Python</span></div>
+        <div class="tile"><i class="devicon-fastapi-plain colored" aria-hidden="true"></i><span>FastAPI</span></div>
+        <div class="tile"><i class="devicon-flask-original mono" aria-hidden="true"></i><span>Flask</span></div>
+        <div class="tile"><i class="devicon-nodejs-plain colored" aria-hidden="true"></i><span>Node.js</span></div>
+        <div class="tile"><i class="devicon-typescript-plain colored" aria-hidden="true"></i><span>TypeScript</span></div>
+        <div class="tile"><i class="devicon-nestjs-original colored" aria-hidden="true"></i><span>NestJS</span></div>
+        <div class="tile"><i class="devicon-express-original mono" aria-hidden="true"></i><span>Express</span></div>
+        <div class="tile"><i class="devicon-fastify-plain mono" aria-hidden="true"></i><span>Fastify</span></div>
+        <div class="tile"><i class="devicon-javascript-plain colored" aria-hidden="true"></i><span>JavaScript</span></div>
+        <div class="tile"><i class="devicon-pandas-plain mono" aria-hidden="true"></i><span>Pandas</span></div>
+      </div>
+      <p class="tech-label">Dados</p>
+      <div class="tech">
+        <div class="tile"><i class="devicon-postgresql-plain colored" aria-hidden="true"></i><span>PostgreSQL</span></div>
+        <div class="tile"><i class="devicon-sqlite-plain colored" aria-hidden="true"></i><span>SQLite</span></div>
+        <div class="tile"><i class="devicon-prisma-original mono" aria-hidden="true"></i><span>Prisma</span></div>
+        <div class="tile"><b class="alt">Dz</b><span>Drizzle</span></div>
+        <div class="tile"><b class="alt">GS</b><span>Google Sheets API</span></div>
+      </div>
+      <p class="tech-label">Front-end e ferramentas</p>
+      <div class="tech">
+        <div class="tile"><i class="devicon-react-original colored" aria-hidden="true"></i><span>React</span></div>
+        <div class="tile"><i class="devicon-nextjs-plain mono" aria-hidden="true"></i><span>Next.js</span></div>
+        <div class="tile"><i class="devicon-tailwindcss-original colored" aria-hidden="true"></i><span>Tailwind</span></div>
+        <div class="tile"><i class="devicon-docker-plain colored" aria-hidden="true"></i><span>Docker</span></div>
+        <div class="tile"><b class="alt">Ng</b><span>Nginx</span></div>
+        <div class="tile"><i class="devicon-githubactions-plain colored" aria-hidden="true"></i><span>GitHub Actions</span></div>
+        <div class="tile"><i class="devicon-git-plain colored" aria-hidden="true"></i><span>Git</span></div>
+        <div class="tile"><i class="devicon-vitest-plain colored" aria-hidden="true"></i><span>Vitest</span></div>
+        <div class="tile"><i class="devicon-postman-plain colored" aria-hidden="true"></i><span>Postman</span></div>
+        <div class="tile"><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML/CSS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="wrap band">
+    <div class="proj-head">
+      <div><span class="eyebrow">Projetos em destaque</span><h2 class="h2">Alguns dos meus trabalhos</h2></div>
+      <a href="https://github.com/Richardblasty" target="_blank" rel="noopener" class="btn btn-ghost">Ver todos no GitHub <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="projects">
+      <!-- Para adicionar um projeto: copie um <article class="card"> e troque o conteúdo. -->
+      <article class="card">
+        <div class="shot" aria-hidden="true">
+          <div class="m-pdf">
+            <div class="doc"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="arrow">→</span>
+            <div class="sheet">
+              <span class="h">Pedido</span><span class="h">Venc.</span><span class="h">Valor</span><span class="h">Status</span>
+              <span class="n">#0141</span><span>12/03</span><span class="n">R$ —</span><span>ok</span>
+              <span class="n">#0142</span><span>12/03</span><span class="n">R$ —</span><span>ok</span>
+              <span class="n">#0143</span><span>13/03</span><span class="n">R$ —</span><span>ok</span>
+              <span class="n">#0144</span><span>14/03</span><span class="n">R$ —</span><span>ok</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>InstPDF</h3><span class="badge live">Em produção</span></div>
+          <p>App desktop que lê PDFs de entradas (SICOB) e de pedidos, extrai os dados e envia tudo organizado para o Google Sheets. Tem servidor de licenças próprio que valida cada cliente por assinatura.</p>
+          <p class="role-line"><span>Meu papel:</span> autor e desenvolvedor principal (60+ dos 90 commits)</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Google Sheets API</span><span>pdfplumber</span></div>
+          <div class="links"><span class="muted"><svg><use href="#i-lock"/></svg>Repositório privado</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="shot" aria-hidden="true">
+          <div class="m-browser"><div class="m-bar"><i></i><i></i><i></i><em>boscoskateshop · loja + painel</em></div>
+            <div class="m-shop">
+              <div class="shop-hero"><div><i></i><i></i><u></u></div><svg viewBox="0 0 56 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 9c3 4 45 4 48 0"/><circle cx="15" cy="17" r="3"/><circle cx="41" cy="17" r="3"/></g></svg></div>
+              <div class="shop-grid"><span><i></i><b></b></span><span><i></i><b></b></span><span><i></i><b></b></span><span><i></i><b></b></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Loja Bosco</h3><span class="badge dev">Em desenvolvimento</span></div>
+          <p>E-commerce de skate para um cliente real de Fortaleza: catálogo com variações, carrinho, checkout, frete e painel administrativo para o dono gerenciar loja, estoque e vendas sem mexer em código.</p>
+          <p class="role-line"><span>Meu papel:</span> criei o monorepo e desenvolvo telas da loja e do painel, em equipe de 3</p>
+          <div class="tags"><span>TypeScript</span><span>NestJS</span><span>Next.js</span><span>PostgreSQL</span><span>Drizzle</span><span>Turborepo</span></div>
+          <div class="links"><span class="muted"><svg><use href="#i-lock"/></svg>Repositório privado</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="shot" aria-hidden="true">
+          <div class="m-browser"><div class="m-bar"><i></i><i></i><i></i><em>orbe · descubra a IA ideal</em></div>
+            <div class="m-orbe">
+              <div class="orb"></div>
+              <div class="bubble">Qual missão você quer cumprir?</div>
+              <div class="opts"><span>Criar relatórios</span><span>Atender clientes</span><span>Analisar dados</span><span>Escrever textos</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><h3>Orbe</h3><span class="badge live">No ar</span></div>
+          <p>Jornada gamificada, com visual de RPG em pixel art, que recomenda ferramentas de IA para a tarefa de cada profissional. Feita para uma feira de conhecimento, com acesso por QR Code.</p>
+          <p class="role-line"><span>Meu papel:</span> desenvolvedor back-end: API, banco, recomendação com IA e deploy</p>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>SQLite</span><span>Claude API</span><span>Render</span></div>
+          <!-- TROCAR: adicionar o link "Ver online" com a URL do Render quando quiser -->
+          <div class="links"><a href="https://github.com/JuhCampelo/projeto_orbe" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg>Código</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap band contact-grid">
+    <div>
+      <span class="eyebrow">Entre em contato</span>
+      <h2 class="h2">Vamos construir algo juntos</h2>
+      <p class="lead">Tem um sistema para criar, um processo para automatizar ou uma ideia para tirar do papel? Me conte o que você precisa e eu respondo com uma proposta.</p>
+    </div>
+    <!-- TROCAR: substituir SEU_ID pelo ID do formulário criado no Formspree -->
+    <form id="form" action="https://formspree.io/f/SEU_ID" method="POST" novalidate>
+      <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" name="nome" required placeholder="Maria Souza" autocomplete="name"></div>
+      <div class="field"><label for="f-email">Seu e-mail</label><input id="f-email" name="email" type="email" required placeholder="maria@email.com" autocomplete="email"></div>
+      <div class="field full"><label for="f-tipo">Tipo de projeto</label>
+        <select id="f-tipo" name="tipo"><option>Sistema / API back-end</option><option>Automação de planilhas e PDFs</option><option>Site institucional</option><option>Outro</option></select></div>
+      <div class="field full"><label for="f-msg">Mensagem</label><textarea id="f-msg" name="mensagem" required placeholder="Conte um pouco sobre o projeto"></textarea></div>
+      <button class="btn btn-primary" type="submit">Enviar mensagem <svg><use href="#i-arrow"/></svg></button>
+      <p class="form-note" id="form-note" role="status"></p>
+    </form>
+    <div class="cinfo">
+      <a class="crow" href="mailto:richardmarques923@gmail.com"><svg><use href="#i-mail"/></svg><div><span>E-mail</span><strong>richardmarques923@gmail.com</strong></div></a>
+      <a class="crow" href="https://wa.me/558584628735" target="_blank" rel="noopener"><svg><use href="#i-phone"/></svg><div><span>Telefone / WhatsApp</span><strong>+55 85 8462-8735</strong></div></a>
+      <div class="crow"><svg><use href="#i-pin"/></svg><div><span>Localização</span><strong>Brasil, Ceará, Fortaleza, Messejana</strong></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a href="#inicio" class="logo"><span class="logo-mark">RM</span>RICHARD<b>MARQUES</b></a>
+      <p>Desenvolvedor back-end. Sistemas, automações e integrações que resolvem problemas reais.</p>
+    </div>
+    <div>
+      <h4>Links rápidos</h4>
+      <ul><li><a href="#sobre">Sobre</a></li><li><a href="#habilidades">Habilidades</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#contato">Contato</a></li></ul>
+    </div>
+    <div>
+      <h4>Me siga</h4>
+      <div class="socials">
+        <a href="https://github.com/Richardblasty" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-gh"/></svg></a>
+        <a href="https://www.instagram.com/richardmarquesdev" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+        <a href="https://www.linkedin.com/in/richard-de-assis-marques-04745a335" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-in"/></svg></a>
+        <a href="mailto:richardmarques923@gmail.com" aria-label="E-mail"><svg><use href="#i-mail"/></svg></a>
+      </div>
+      <p class="foot-mail">richardmarques923@gmail.com</p>
+    </div>
+  </div>
+  <div class="wrap copy"><span>© <span id="ano">2026</span> Richard de Assis Marques. Todos os direitos reservados.</span><span>Feito com <b>Python</b> na cabeça e café na mão</span></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
